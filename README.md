@@ -7,21 +7,23 @@
 
 AINet is an intelligent network monitoring and anomaly detection system that uses AI to analyze network metrics and detect unusual patterns across your infrastructure. Built with LangGraph and LangChain, it provides real-time monitoring, automated analysis, and actionable insights.
 
-## 🚀 Features
+## Features
 
 ### Core Capabilities
-- **🔍 Real-time Network Monitoring**: Continuous collection of network metrics from multiple Linux machines
-- **🤖 AI-Powered Anomaly Detection**: Uses LangGraph workflows and LangChain for intelligent analysis
-- **📊 Comprehensive Metrics Collection**: 
+
+- **Real-time Network Monitoring**: Continuous collection of network metrics from multiple Linux machines
+- **AI-Powered Anomaly Detection**: Uses LangGraph workflows and LangChain for intelligent analysis
+- **Comprehensive Metrics Collection**:
   - System metrics (CPU, memory, disk usage)
   - Network statistics (bandwidth, connections, packet loss)
   - Latency measurements (DNS, gateway)
   - Interface details and configuration
-- **🚨 Smart Alerting**: Automated alert generation with severity classification
-- **📈 Historical Analysis**: Time-series data storage and trend analysis
-- **🎯 Risk Assessment**: AI-generated risk evaluations and recommendations
+- **Smart Alerting**: Automated alert generation with severity classification
+- **Historical Analysis**: Time-series data storage and trend analysis
+- **Risk Assessment**: AI-generated risk evaluations and recommendations
 
 ### Technical Features
+
 - **Distributed Architecture**: Lightweight agents + centralized analysis server
 - **Scalable Design**: Handles hundreds of monitored machines
 - **RESTful API**: Full API access for integration and custom dashboards
@@ -29,7 +31,7 @@ AINet is an intelligent network monitoring and anomaly detection system that use
 - **Secure Communication**: API key authentication and SSL support
 - **Production Ready**: Systemd service integration, log rotation, monitoring
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -54,7 +56,7 @@ AINet is an intelligent network monitoring and anomaly detection system that use
                     └─────────────────────────┘
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Python**: 3.11 or higher
 - **Operating System**: Linux (Ubuntu, CentOS, RHEL, Debian, Amazon Linux)
@@ -63,11 +65,12 @@ AINet is an intelligent network monitoring and anomaly detection system that use
 - **Permissions**: Root access for agent installation
 
 ### Optional Requirements
+
 - **OpenAI API Key**: For advanced AI analysis (or use local models)
 - **Redis**: For enhanced caching (falls back to in-memory)
 - **PostgreSQL**: For production database (defaults to SQLite)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -118,11 +121,12 @@ sudo ainet-status
 ### 4. Access the Dashboard
 
 Open your browser and go to:
+
 - **Dashboard**: `http://localhost:8000/dashboard`
 - **API Documentation**: `http://localhost:8000/docs`
 - **System Status**: `http://localhost:8000/status`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AINet/
@@ -146,7 +150,7 @@ AINet/
 └── docs/                       # Documentation
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Server Configuration
 
@@ -159,13 +163,13 @@ server:
   debug: false
 
 database:
-  url: "sqlite:///./ainet.db"  # or postgresql://...
+  url: "sqlite:///./ainet.db" # or postgresql://...
 
 ai:
   model_provider: "openai"
   model_name: "gpt-4"
   api_key: "your-openai-api-key"
-  
+
 monitoring:
   analysis_interval_minutes: 60
   anomaly_sensitivity: 0.8
@@ -190,7 +194,7 @@ monitoring:
       host: "8.8.8.8"
 ```
 
-## 🤖 AI Analysis Workflow
+## AI Analysis Workflow
 
 AINet uses LangGraph to create sophisticated analysis workflows:
 
@@ -233,25 +237,29 @@ AINet uses LangGraph to create sophisticated analysis workflows:
 }
 ```
 
-## 🛠️ API Reference
+## API Reference
 
 ### Key Endpoints
 
 #### Agent Management
+
 - `GET /api/v1/agents` - List all registered agents
 - `GET /api/v1/agents/{id}/metrics` - Get metrics for specific agent
 - `POST /api/v1/heartbeat` - Agent heartbeat endpoint
 
 #### Metrics Collection
+
 - `POST /api/v1/metrics` - Submit single metric data point
 - `POST /api/v1/metrics/batch` - Submit batch of metrics
 
 #### Analysis & Alerts
+
 - `GET /api/v1/alerts` - Get alerts with filtering
 - `POST /api/v1/analysis/agent/{id}` - Trigger AI analysis
 - `GET /api/v1/analysis/history/{id}` - Get analysis history
 
 #### System Health
+
 - `GET /api/v1/health` - System health check
 - `GET /status` - Detailed system status
 
@@ -263,7 +271,7 @@ All API requests require an API key in the header:
 curl -H "X-API-Key: your-api-key" http://localhost:8000/api/v1/agents
 ```
 
-## 🔧 Management
+## Management
 
 ### Agent Management
 
@@ -308,17 +316,19 @@ with db_manager.get_session() as db:
     agents = db.query(Agent).all()
 ```
 
-## 🏭 Production Deployment
+## Production Deployment
 
 ### Server Deployment
 
 1. **Use Production Database**:
+
    ```yaml
    database:
      url: "postgresql://user:pass@localhost/ainet"
    ```
 
 2. **Enable Security**:
+
    ```yaml
    security:
      api_keys_required: true
@@ -341,7 +351,7 @@ with db_manager.get_session() as db:
 - **Metrics Export**: Prometheus-compatible metrics available
 - **Backup**: Regular database backups recommended
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -354,7 +364,7 @@ pytest --cov=server --cov=agent tests/
 pytest tests/test_agent.py -v
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
@@ -381,14 +391,14 @@ pip install -r requirements-dev.txt
 python server/main.py --config config/config.yaml --debug
 ```
 
-## 📚 Documentation
+## Documentation
 
 - **API Documentation**: Available at `/docs` when server is running
 - **Architecture Guide**: `docs/architecture.md`
 - **Deployment Guide**: `docs/deployment.md`
 - **Troubleshooting**: `docs/troubleshooting.md`
 
-## 🔒 Security Considerations
+## Security Considerations
 
 - **API Keys**: Use strong, unique keys for each deployment
 - **Network Security**: Deploy server behind firewall/VPN when possible
@@ -396,7 +406,7 @@ python server/main.py --config config/config.yaml --debug
 - **Least Privilege**: Agents run with minimal required permissions
 - **Data Privacy**: Metrics are aggregated, no personal data collected
 
-## 📈 Performance & Scalability
+## Performance & Scalability
 
 - **Agent Performance**: Minimal CPU/memory footprint (~10MB RAM)
 - **Server Capacity**: Handles 100+ agents on modest hardware
@@ -404,20 +414,22 @@ python server/main.py --config config/config.yaml --debug
 - **Caching**: Redis integration for improved performance
 - **Horizontal Scaling**: Stateless design supports load balancing
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
 1. **Agent can't connect to server**:
+
    ```bash
    # Check network connectivity
    curl -I http://your-server:8000/api/v1/health
-   
+
    # Verify configuration
    sudo cat /etc/ainet/agent.yaml
    ```
 
 2. **High memory usage**:
+
    - Adjust `collection_interval` in agent config
    - Configure log rotation
    - Monitor queue sizes
@@ -436,11 +448,11 @@ logging:
   level: "DEBUG"
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **LangChain Team** for the excellent AI framework
 - **FastAPI** for the high-performance web framework
@@ -448,7 +460,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Pydantic** for data validation
 - Open source community for various dependencies
 
-## 📞 Support
+## Support
 
 - **Issues**: [GitHub Issues](https://github.com/your-org/ainet/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-org/ainet/discussions)
@@ -457,6 +469,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by the AINet Team**
+**Made with love by the AINet Team**
 
-*AINet - Intelligent Network Monitoring for the Modern Infrastructure*
+_AINet - Intelligent Network Monitoring for the Modern Infrastructure_
