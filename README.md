@@ -1,7 +1,6 @@
 # AINet - AI-Powered Network Anomaly Detection System
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Latest-teal.svg)](https://fastapi.tiangolo.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-Latest-orange.svg)](https://langchain.com/)
 
@@ -448,9 +447,6 @@ logging:
   level: "DEBUG"
 ```
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -460,15 +456,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Pydantic** for data validation
 - Open source community for various dependencies
 
-## Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-org/ainet/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-org/ainet/discussions)
-- **Documentation**: [Wiki](https://github.com/your-org/ainet/wiki)
-- **Email**: support@yourcompany.com
 
----
-
-**Made with love by the AINet Team**
-
-_AINet - Intelligent Network Monitoring for the Modern Infrastructure_
