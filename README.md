@@ -74,8 +74,7 @@ AINet is an intelligent network monitoring and anomaly detection system that use
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/ainet.git
-cd ainet
+git clone https://github.com/sahanrashmikaslk/AI_Network_Analysis.git
 ```
 
 ### 2. Set Up the Central Server
