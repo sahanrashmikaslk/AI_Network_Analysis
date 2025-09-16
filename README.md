@@ -7,7 +7,55 @@
 
 AINet is an intelligent network monitoring and anomaly detection system that uses AI to analyze network metrics and detect unusual patterns across your infrastructure. Built with LangGraph and LangChain, it provides real-time monitoring, automated analysis, and actionable insights.
 
+## Demo Video
+
+[![AINet Demo](https://img.youtube.com/vi/BZHvH7XK-G4/0.jpg)](https://youtu.be/BZHvH7XK-G4?si=zdwB3cZ6_4ADxydP)
+
+_Click the image above to watch the full demo video showing AINet in action_
+
+## Dashboard Screenshots
+
+### Main Dashboard - Overview & Alerts
+
+<img src="https://raw.githubusercontent.com/sahanrashmikaslk/AI_Network_Analysis/main/docs/images/dashboard-overview.png" alt="AINet Dashboard Overview" width="800"/>
+
+_The main dashboard showing system status, recent alerts, and navigation menu with anomaly detection results_
+
+### AI Analysis Controls
+
+<img src="https://raw.githubusercontent.com/sahanrashmikaslk/AI_Network_Analysis/main/docs/images/ai-analysis-controls.png" alt="AI Analysis Controls" width="800"/>
+
+_AI-powered analysis controls with time window selection, batch processing options, and individual agent analysis_
+
+### AI Network Assistant
+
+<img src="https://raw.githubusercontent.com/sahanrashmikaslk/AI_Network_Analysis/main/docs/images/ai-chat-assistant.png" alt="AI Network Assistant" width="800"/>
+
+_Interactive AI assistant for network queries and real-time system information_
+
+### Chat Conversation History
+
+<img src="https://raw.githubusercontent.com/sahanrashmikaslk/AI_Network_Analysis/main/docs/images/chat-conversation.png" alt="Chat History" width="800"/>
+
+_AI assistant conversation history showing system status queries and responses with detailed agent information_
+
 ## Features
+
+### Dashboard Highlights (As Shown in Screenshots)
+
+- **📊 Interactive Dashboard**: Clean, modern interface with real-time status indicators
+- **🚨 Intelligent Alerts**: Anomaly detection with severity levels (MEDIUM/HIGH) and detailed descriptions
+- **🤖 AI-Powered Analysis**:
+  - Batch analysis for all agents
+  - Individual agent deep-dive analysis
+  - Configurable time windows (24 hours, custom ranges)
+  - Force analysis option to bypass cache
+- **💬 AI Network Assistant**:
+  - Natural language queries about network status
+  - Real-time agent information retrieval
+  - Conversation history and context awareness
+  - Automated responses with detailed system insights
+- **📈 Real-time Monitoring**: Live agent status (Online/Offline) with instant updates
 
 ### Core Capabilities
 
