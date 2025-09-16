@@ -42,19 +42,19 @@ _AI assistant conversation history showing system status queries and responses w
 
 ### Dashboard Highlights (As Shown in Screenshots)
 
-- **📊 Interactive Dashboard**: Clean, modern interface with real-time status indicators
-- **🚨 Intelligent Alerts**: Anomaly detection with severity levels (MEDIUM/HIGH) and detailed descriptions
-- **🤖 AI-Powered Analysis**:
+- **Interactive Dashboard**: Clean, modern interface with real-time status indicators
+- **Intelligent Alerts**: Anomaly detection with severity levels (MEDIUM/HIGH) and detailed descriptions
+- **AI-Powered Analysis**:
   - Batch analysis for all agents
   - Individual agent deep-dive analysis
   - Configurable time windows (24 hours, custom ranges)
   - Force analysis option to bypass cache
-- **💬 AI Network Assistant**:
+- **AI Network Assistant**:
   - Natural language queries about network status
   - Real-time agent information retrieval
   - Conversation history and context awareness
   - Automated responses with detailed system insights
-- **📈 Real-time Monitoring**: Live agent status (Online/Offline) with instant updates
+- **Real-time Monitoring**: Live agent status (Online/Offline) with instant updates
 
 ### Core Capabilities
 
